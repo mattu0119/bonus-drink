@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    background: #c0f5b9
+}
+
+.container {
+    margin: 0 auto 0 auto;
+}
+section .container {
+    display: flex;
+    flex-flow: row;
+}
+main {
+    padding: 20px 10px 20px 10px;
+    flex: 1 1 auto;
+    background: white;
+}
+
+.sidebar {
+    padding: 20px 10px 20px 10px;
+    flex: 0 0 340px;
+    background: #51f53f;
+}
+
+.title {
+    border: 1px solid #f56244;
+}
