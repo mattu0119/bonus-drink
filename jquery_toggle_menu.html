@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $('.menu1').show();
+            $('.menu2').hide();
+
+            $('.button').click(function () {
+
+                $('#wrap').toggleClass('switch');
+
+                if($('#wrap').hasClass('switch')){
+
+                    $('.menu1').hide();
+                    $('.menu2').show();
+
+                }else{
+
+                    $('.menu1').show();
+                    $('.menu2').hide();
+
+                }
+            });
+        });
+    </script>
+    <title>Title</title>
+</head>
+<body>
+<div id="wrap">
+    <button class="button">Switch Button</button>
+    <div class="menu1">element1</div>
+    <div class="menu2">element2</div>
+</div>
+
+</body>
+</html>

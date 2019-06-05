@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            var topPosition = $(".top").offset().top;
+            var bottomPosition = $(".bottom").offset().top;
+            $(".bottom-button").click(function () {
+                $("html,body").animate({
+                    scrollTop: bottomPosition
+                }, {
+                    queue: false
+                });
+            });
+            $(".top-button").click(function () {
+                $("html,body").animate({
+                    scrollTop: topPosition
+                }, {
+                    queue: false
+                });
+            });
+        })
+    </script>
+    <style>
+        .margin {
+            height: 3000px
+        }
+    </style>
+    <title>Title</title>
+</head>
+<body>
+<button class="bottom-button">go to bottom</button>
+<div class="top"> top </div>
+<div class="margin"> </div>
+
+<div class="bottom"> bottom </div>
+<button class="top-button">go to top</button>
+</body>
+</html>
